@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { BackButtonDirective } from 'src/app/directives/back-button.directive';
-import { AutoFocus } from 'src/app/directives/autofocus.directive';
+import { DraggableDirective } from './draggable.directive';
+import { DroppableDirective } from './droppable.directive';
 
 @NgModule({
   declarations: [
-    BackButtonDirective,
-    AutoFocus
+    DraggableDirective,
+    DroppableDirective
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    BackButtonDirective,
-    AutoFocus
+    DraggableDirective,
+    DroppableDirective
   ]
 })
 export class DirectivesModule { }
