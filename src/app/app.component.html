@@ -1,0 +1,15 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div class="preview" *ngIf="imgFile">
+  <img [src]="imgFile" style="width:400px; height:250px" />
+</div>
+
+<input
+  style="display: none"
+  type="file"
+  (change)="onFileChanged($event)"
+  #fileInput
+/>
+<button (click)="fileInput.click()">Select File</button>
+<button (click)="onUpload()">Upload!</button>
