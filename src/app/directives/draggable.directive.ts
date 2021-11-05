@@ -47,7 +47,7 @@ export class DraggableDirective implements OnInit {
 
         target.classList.add('getting-dragged');
         this.currentlyDragged = true;
-        (window as any).dragData = this.model;
+        // (window as any).dragData = this.model;
       })
       .on('dragend', (event) => {
         event.target.style.transform = 'none';
