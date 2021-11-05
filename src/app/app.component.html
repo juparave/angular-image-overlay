@@ -1,14 +1,22 @@
 <hello name="{{ name }}"></hello>
 <p>Start editing to see some magic happen :)</p>
 
-<div class="preview" *ngIf="imgFile">
-    <img [src]="imgFile" style="width:400px; height:250px" />
+<div class="preview" *ngIf="imgFile" appDroppable>
+  <img [src]="imgFile" style="width:400px; height:250px" />
 </div>
 
-<input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput />
+<input
+  style="display: none"
+  type="file"
+  (change)="onFileChanged($event)"
+  #fileInput
+/>
 <button (click)="fileInput.click()">Select File</button>
 <button (click)="onUpload()">Upload!</button>
 
 <div class="photo" appDraggable>
-    <img src="assets/TR-2404.B.png" />
+  <img
+    width="120px"
+    src="https://github.com/juparave/angular-image-overlay/raw/master/src/assets/TL-5150-CAN.png"
+  />
 </div>
