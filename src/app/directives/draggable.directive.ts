@@ -1,18 +1,25 @@
-import {Directive, ElementRef, EventEmitter, HostListener, Input, OnInit, Output} from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  EventEmitter,
+  HostListener,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 import * as interact from 'interactjs';
 
 @Directive({
-  selector: '[appDraggable]'
+  selector: '[appDraggable]',
 })
 export class DraggableDirective implements OnInit {
-
   @Input()
   model: any;
 
   @Input()
   options: any;
 
-  @Output() 
+  @Output()
   draggableClick = new EventEmitter();
 
   private currentlyDragged = false;
