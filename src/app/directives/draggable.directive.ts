@@ -7,7 +7,7 @@ import {
   OnInit,
   Output,
 } from '@angular/core';
-import * as interact from 'interactjs';
+import interact from 'interactjs';
 
 @Directive({
   selector: '[appDraggable]',
