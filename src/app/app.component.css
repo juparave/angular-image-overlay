@@ -12,7 +12,7 @@ p {
   vertical-align: auto;
 }
 
-appDraggable {
+.draggable {
   touch-action: none;
   user-select: none;
 }
