@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fabric } from 'fabric';
+import { fabric } from 'fabric-with-gestures';
 
 @Component({
   selector: 'app-fabricjs',
