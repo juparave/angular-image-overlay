@@ -78,7 +78,7 @@ export class DraggableDirective implements OnInit {
 
     target.style.transform = `translate(${newX}px, ${newY}px)`;
 
-    target.setAttribute('data-x', x);
-    target.setAttribute('data-y', y);
+    target.setAttribute('data-x', newX);
+    target.setAttribute('data-y', newY);
   }
 }
