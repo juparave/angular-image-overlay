@@ -11,3 +11,8 @@ p {
   text-align: center;
   vertical-align: auto;
 }
+
+appDraggable {
+  touch-action: none;
+  user-select: none;
+}
