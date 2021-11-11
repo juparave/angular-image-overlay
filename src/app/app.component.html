@@ -10,6 +10,7 @@
   type="file"
   accept="image/*"
   (change)="onFileChanged($event)"
+  capture="environment"
   #fileInput
 />
 <button (click)="fileInput.click()">Select File</button>
