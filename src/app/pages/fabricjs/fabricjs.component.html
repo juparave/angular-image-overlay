@@ -1,1 +1,13 @@
-<p>fabricjs works!</p>
+<input
+  style="display: none"
+  type="file"
+  accept="image/*"
+  (change)="onFileChanged($event)"
+  capture="environment"
+  #fileInput
+/>
+<button (click)="fileInput.click()">Select File</button>
+<button (click)="addOther()">Add other</button>
+
+<canvas id="canvas" width="800" height="800"></canvas>
+

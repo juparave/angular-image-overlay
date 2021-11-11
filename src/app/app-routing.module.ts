@@ -5,7 +5,6 @@ import { FabricjsComponent } from './pages/fabricjs/fabricjs.component';
 import { AppComponent } from './app.component';
 
 
-
 const routes: Routes = [
 
   { path: '', redirectTo: 'AppComponent', pathMatch: 'full' },

@@ -67,19 +67,7 @@ export class ResizableDirective implements OnInit {
         ],
     
         inertia: true
-      })
-      .draggable({
-        // listeners: { move: window.dragMoveListener },
-        inertia: true,
-        // call this function on every dragmove event
-        onmove: this.dragMoveListener,
-        modifiers: [
-          interact.modifiers.restrictRect({
-            restriction: 'parent',
-            endOnly: true
-          })
-        ]
-      })
+      });
   }
 
   dragMoveListener (event) {
