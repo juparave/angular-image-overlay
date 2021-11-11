@@ -50,14 +50,14 @@ export class DraggableDirective implements OnInit {
         // (window as any).dragData = this.model;
       })
       .on('dragend', (event) => {
-        event.target.style.transform = 'none';
-        event.target.removeAttribute('data-x');
-        event.target.removeAttribute('data-y');
-        event.target.classList.remove('getting-dragged');
-        setTimeout(() => {
-          (window as any).dragData = null;
-          this.currentlyDragged = false;
-        });
+        // event.target.style.transform = 'none';
+        // event.target.removeAttribute('data-x');
+        // event.target.removeAttribute('data-y');
+        // event.target.classList.remove('getting-dragged');
+        // setTimeout(() => {
+        //   (window as any).dragData = null;
+        //   this.currentlyDragged = false;
+        // });
       });
   }
 
