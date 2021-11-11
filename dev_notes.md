@@ -1,3 +1,6 @@
+## FabricJS
+
+http://fabricjs.com/
 
 ### install fabric and @types/fabric.
 
@@ -7,6 +10,10 @@
 Optional, fabric-with-gestures to try to handle gestures on mobile or touche screens
 
     $ npm install fabric-with-gestures --save-prod
+
+### Basic guide on layers, rotation and scalling
+
+ref: https://programmerall.com/article/31642130903/
 
 ### Hiding controls
 
