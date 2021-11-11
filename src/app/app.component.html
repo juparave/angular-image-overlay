@@ -1,36 +1,6 @@
-<hello name="{{ name }}"></hello>
-<p>Start editing to see some magic happen :)</p>
-
-<div class="preview" *ngIf="imgFile" appDroppable>
-  <img [src]="imgFile" style="width:400px; height:250px" />
-</div>
-
-<input
-  style="display: none"
-  type="file"
-  accept="image/*"
-  (change)="onFileChanged($event)"
-  capture="environment"
-  #fileInput
-/>
-<button (click)="fileInput.click()">Select File</button>
-<button (click)="onUpload()">Upload!</button>
-
-<div class="draggable photo" appDraggable>
-  <img
-    width="120px"
-    src="https://github.com/juparave/angular-image-overlay/raw/master/src/assets/TL-5150-CAN.png"
-  />
-</div>
-<div class="draggable photo" appDraggable>
-  <img
-    width="120px"
-    src="https://github.com/juparave/angular-image-overlay/raw/master/src/assets/TL-2930_1.png"
-  />
-</div>
-<div class="draggable photo" appDraggable>
-  <img
-    width="120px"
-    src="https://github.com/juparave/angular-image-overlay/raw/master/src/assets/TR-2404.B.png"
-  />
-</div>
+<ul>
+  <li><a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a></li>
+  <li><a [routerLink]="['/interactjs']" routerLinkActive="router-link-active" >InteractJS</a></li>
+  <li><a [routerLink]="['/fabricjs']" routerLinkActive="router-link-active" >FabricJS</a></li>
+</ul>
+<router-outlet></router-outlet>

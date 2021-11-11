@@ -1,0 +1,28 @@
+p {
+    font-family: Lato;
+  }
+  
+  .item {
+    width: 130px;
+    height: 33px;
+    background-color: yellow;
+    touch-action: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: auto;
+  }
+  
+  .draggable {
+    touch-action: none;
+    user-select: none;
+  }
+  
+  .resizable {
+    touch-action: none;
+    user-select: none;
+    /* This makes things *much* easier */
+    box-sizing: border-box;
+    background-color: blue;
+  }
+
+  
